@@ -1,0 +1,120 @@
+@import url(reset.css);
+@import url(resume-slide.css);
+
+body{
+    font-family:'Merriweather', serif;
+    /* overflow: hidden; */
+}
+
+.one-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.one-page:first-child{
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.one-page:nth-child(2),.one-page:nth-child(3),.one-page:nth-child(4){
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.color1{ background-color: #fdfdfdc9;}
+.color2{ background-color: #e3ded8;}
+.color3{ background-color: #b2d9ea;}
+
+#circle-collection{
+    width: 80px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    background-color:#fff;
+    border-radius: 50%;
+    background-image: url(img/nav_sprites.png);
+    background-size: 100%;
+}
+
+.home{background-position: 0px -60px;}
+.about-me{background-position: 0px -300px;}
+.contacts{background-position: 0px -240px;}
+.works{background-position: 0px -120px;}
+
+.activePoint {
+    background-color: #fff;
+    border: 10px solid #fff; 
+}
+
+#info-about{
+    height: 50%;
+    width: 70%;
+    padding: 30px 10px;
+    background-color:#619196;
+    text-align: center;
+    z-index: 10;
+}
+
+.main-text-h{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+hr{
+    width: 80%;
+    height: 1px;
+    background-color: #fff9e9;;
+}
+
+.main-text{
+    padding-top:  50px;
+    padding-bottom: 35px;
+    font-size: 30px;
+}
+
+.f-end{font-size: 45px;}
+
+.darkmilk{ color: #f5eacd;}
+.milk{ color: #fff9e9;}
+.light-pink{ color: #f8dfd6;}
+.main-tcolor{ color: #3c9da8;}
+
+#container{
+    width: 100%;
+    display: flex;
+}
+
+#cont1{
+    width: 90%;
+}
+
+#cont2{
+    width: 10%;
+    height: 100vh;
+    background-color: #619196;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0px;
+    z-index: 10;
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #619196;
+    position: fixed;
+    top: -200px;
+}
